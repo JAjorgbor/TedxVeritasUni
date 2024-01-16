@@ -9,7 +9,7 @@ const Contact = ({}) => {
     <>
       <Section sectionName='Contact' className='mt-10 space-y-10'>
         <h2 className='font-bold text-2xl text-center'>Contact Us</h2>
-        <div className='flex lg:w-4/5 mx-auto gap-5 flex-col md:flex-row'>
+        <div className='flex lg:w-4/5 mx-auto gap-8 md:gap-5 flex-col md:flex-row'>
           <div className='space-y-4 flex-1 text-foreground-500'>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia

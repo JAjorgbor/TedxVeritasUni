@@ -34,7 +34,7 @@ const Header = () => {
       <Navbar
         className={`${
           !isScrolled ? 'bg-transparent' : 'backdrop-blur-sm'
-        } fixed top-0 px-5 md:px-0`}
+        } fixed top-0 px-3 md:px-0`}
         onScrollPositionChange={(position) => {
           if (position > 50) {
             setIsScrolled(true)
