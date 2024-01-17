@@ -16,6 +16,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+ul {
+  --navbar-height: 70vh !important;
+}
 
 a {
   @apply transform transition-transform hover:-translate-y-1 !important;

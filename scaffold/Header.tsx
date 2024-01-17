@@ -83,7 +83,7 @@ const Header = () => {
             </Button>
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenu>
+        <NavbarMenu className='top-16'>
           {menuItems.map((item, index) => (
             <NavbarMenuItem
               key={`${item}-${index}`}
