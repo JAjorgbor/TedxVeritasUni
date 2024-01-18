@@ -13,6 +13,7 @@ import {
 } from '@nextui-org/react'
 import { usePathname, useRouter } from 'next/navigation'
 import { HashValueContext } from '@/app/Providers'
+import Image from 'next/image'
 
 const Header = () => {
   const pathname = usePathname()
@@ -47,7 +48,13 @@ const Header = () => {
           <NavbarMenuToggle className='md:hidden hover:text-primary' />
           <NavbarBrand>
             <Link href='#' size='lg'>
-              <p className='font-bold text-inherit'>TEDxVeritasUni</p>
+              {/* <p className='font-bold text-inherit'>TEDxVeritasUni</p> */}
+              <Image
+                src='/images/logo-black.png'
+                alt='logo black'
+                width={200}
+                height={100}
+              />
             </Link>
           </NavbarBrand>
         </NavbarContent>

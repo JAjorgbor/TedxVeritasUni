@@ -8,6 +8,9 @@
   --background-end-rgb: 255, 255, 255;
   scroll-behavior: smooth !important;
 }
+::selection {
+  @apply bg-primary text-white;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

@@ -1,5 +1,6 @@
 import { Link } from '@nextui-org/react'
 import moment from 'moment'
+import Image from 'next/image'
 import { Instagram, Twitter, Youtube } from 'react-feather'
 
 const Footer = () => {
@@ -7,7 +8,14 @@ const Footer = () => {
     <>
       <footer className='bg-black text-white mt-16'>
         <div className='mx-auto max-w-5xl px-4 pt-10 pb-5 sm:px-6 lg:px-8'>
-          <div className='flex justify-center font-bold'>Logo</div>
+          <div className='flex justify-center font-bold'>
+            <Image
+              src='/images/logo-white.png'
+              alt='logo white'
+              width={300}
+              height={200}
+            />
+          </div>
           <p className='mx-auto mt-6 max-w-md text-center leading-relaxed'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
             consequuntur amet culpa cum itaque neque.
