@@ -1,7 +1,9 @@
 import Category from '@/components/cards/Category'
+import ParticlesSection from '@/components/elements/ParticlesSection'
 import Section from '@/components/elements/Section'
 import Contact from '@/components/sections/Contact'
 import FAQs from '@/components/sections/FAQs'
+import Hero from '@/components/sections/Hero'
 import Speakers from '@/components/sections/Speakers'
 import Image from 'next/image'
 
@@ -9,10 +11,7 @@ export default function Home() {
   return (
     <>
       {/* Start Hero Section */}
-      <Section
-        sectionName=''
-        className="w-full h-[60vh] xl:h-[600px] bg-[url('https://dummyimage.com/1600x600')] bg-no-repeat bg-center"
-      ></Section>
+      <Hero />
       {/* End Hero Section */}
       <Section sectionName='About' className='py-5 space-y-10 '>
         <div className='space-y-5'>
@@ -46,8 +45,8 @@ export default function Home() {
                 </li>
                 <li>
                   <strong className='font-bold'>
-                    Enchant through Entertainment
-                  </strong>
+                    Enchant through Entertainment:
+                  </strong>{' '}
                   Providing a platform for captivating and impactful
                   entertainment experiences that resonate with diverse
                   audiences.
@@ -163,7 +162,7 @@ export default function Home() {
           <div className='flex-1'>
             <Image
               alt='tedx-image'
-              src='https://dummyimage.com/500x250'
+              src='/images/veritas-logo.jpg'
               width={500}
               height={300}
               className='w-full h-[300px] object-cover'
@@ -172,7 +171,7 @@ export default function Home() {
         </div>
       </Section>
       {/* Start Sponsors */}
-      <Section sectionName='Sponsors' className='py-5 space-y-10'>
+      {/* <Section sectionName='Sponsors' className='py-5 space-y-10'>
         <div className='space-y-5'>
           <h2 className='text-xl text-center font-bold'>Sponsors</h2>
           <div className='flex flex-wrap gap-6 justify-center'>
@@ -208,11 +207,11 @@ export default function Home() {
             />
           </div>
         </div>
-      </Section>
+      </Section> */}
       {/* End Sponsors */}
 
       {/* Start Speakers Section */}
-      <Speakers />
+      {/* <Speakers /> */}
       {/*End Speakers Section */}
 
       {/* Start FAQs Section */}

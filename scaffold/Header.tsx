@@ -24,8 +24,8 @@ const Header = () => {
   const { hashValue, setHashValue } = React.useContext(HashValueContext)
   const menuItems = [
     { label: 'About', route: '#About' },
-    { label: 'Sponsors', route: '#Sponsors' },
-    { label: 'Speakers', route: '#Speakers' },
+    // { label: 'Sponsors', route: '#Sponsors' },
+    // { label: 'Speakers', route: '#Speakers' },
     { label: 'FAQs', route: '#FAQs' },
     { label: 'Contact', route: '#Contact' },
   ]
@@ -33,9 +33,7 @@ const Header = () => {
   return (
     <>
       <Navbar
-        className={`${
-          !isScrolled ? 'bg-transparent' : 'backdrop-blur-sm'
-        } fixed top-0 px-3 md:px-0`}
+        className={`backdrop-blur-sm fixed top-0 px-3 md:px-0`}
         onScrollPositionChange={(position) => {
           if (position > 50) {
             setIsScrolled(true)
