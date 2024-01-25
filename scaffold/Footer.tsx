@@ -54,7 +54,7 @@ const Footer = () => {
           </ul>
           <div className='flex justify-center text-xs text-center mt-10'>
             &copy; TEDxVeritasUni {moment().year()}. <br />
-            Powered by the department of computer science.
+            Powered By The Department Of Computer Science.
           </div>
         </div>
       </footer>

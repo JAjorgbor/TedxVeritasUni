@@ -18,10 +18,15 @@ const Contact = ({}) => {
             </p>
             <div className='flex items-center gap-4'>
               <MapPin size={20} className='text-primary' />
-              <div className='space-y-1'>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor </p>
-              </div>
+              <Link
+                href='https://www.google.com/maps?q=9.29070,7.41642'
+                rel='noreferrer'
+                target='_blank'
+                className='text-inherit hover:text-primary'
+              >
+                Multi Purpose Hall(MPH), <br /> Veritas University, Bwari,
+                Abuja.{' '}
+              </Link>
             </div>
             <div className='flex items-center gap-4'>
               <Phone size={20} className='text-primary' />
