@@ -148,8 +148,8 @@ export default function Home() {
               Welcome to TEDx Veritas University, where we invite you to embark
               on a transformative journey into the realms of brilliance,
               education, tech, and entertainment. Our upcoming event revolves
-              around the compelling theme, &quote;Beyond Brilliance: Navigating
-              the Nexus of Talent, Education, Tech, and Entertainment.&quote;
+              around the compelling theme, &quot;Beyond Brilliance: Navigating
+              the Nexus of Talent, Education, Tech, and Entertainment.&quot;
             </p>
             <p>
               <strong className='font-bold'>Vision:</strong>
