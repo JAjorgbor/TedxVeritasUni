@@ -3,8 +3,26 @@ import React from 'react'
 import Section from '@/components/elements/Section'
 import { Button, Input, Link, Textarea } from '@nextui-org/react'
 import { Mail, Map, MapPin, Phone, Send } from 'react-feather'
+import { useForm } from 'react-hook-form'
 
 const Contact = ({}) => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm()
+  const submitData = async (data: any) => {
+    try {
+      const res = await fetch('/api/contact/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/', body: JSON.stringify(data) },
+      })
+      console.log(res)
+    } catch (error) {
+      console.error(error)
+    }
+  }
   return (
     <>
       <Section sectionName='Contact' className='mt-10 space-y-10'>
@@ -51,15 +69,40 @@ const Contact = ({}) => {
               </div>
             </div>
           </div>
-          <form className='flex-1 space-y-4'>
+          <form
+            className='flex-1 space-y-4'
+            onSubmit={handleSubmit(submitData)}
+            noValidate
+          >
             <div className='grid grid-cols-2 gap-4'>
-              <Input label='First Name' variant='bordered' />
-              <Input label='Last Name' variant='bordered' />
+              <Input
+                label='First Name'
+                variant='bordered'
+                {...register('firstName', {
+                  required: 'First name is required.',
+                })}
+                isInvalid={!!errors.firstName?.message as any}
+                errorMessage={errors.firstName?.message as string}
+              />
+              <Input
+                label='Last Name'
+                variant='bordered'
+                {...register('lastName', {
+                  required: 'Last name is required.',
+                })}
+                isInvalid={!!errors.lastName?.message as any}
+                errorMessage={errors.lastName?.message as string}
+              />
               <Input
                 className='col-span-2'
                 label='Email Address'
                 type='email'
                 variant='bordered'
+                {...register('email', {
+                  required: 'Email address is required.',
+                })}
+                isInvalid={!!errors.email?.message as any}
+                errorMessage={errors.email?.message as string}
               />
               <Textarea
                 fullWidth
@@ -67,9 +110,20 @@ const Contact = ({}) => {
                 label='Message'
                 rows={10}
                 variant='bordered'
+                {...register('message', {
+                  required: 'Please type in a message.',
+                })}
+                isInvalid={!!errors.message?.message as any}
+                errorMessage={errors.message?.message as string}
               />
             </div>
-            <Button color='primary' fullWidth endContent={<Send size={15} />}>
+            <Button
+              color='primary'
+              type='submit'
+              fullWidth
+              endContent={<Send size={15} />}
+              isLoading={isSubmitting}
+            >
               Send
             </Button>
           </form>

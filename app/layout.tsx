@@ -12,7 +12,8 @@ export const metadata: Metadata = {
     template: '%s | TEDxVeritasUni',
     default: 'TEDxVeritasUni',
   },
-  description: 'TEDxVeritasUni Landing page',
+  description:
+    'Embark on a transformative journey with us, where inspiration and innovation collide. Secure your spot now to witness groundbreaking insights, captivating creativity, and a unique experience that transcends the ordinary.',
 }
 
 export default function RootLayout({

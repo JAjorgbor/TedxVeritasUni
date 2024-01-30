@@ -226,7 +226,7 @@ export default function Home() {
       {/*End Speakers Section */}
 
       {/* Start FAQs Section */}
-      <FAQs />
+      {/* <FAQs /> */}
       {/*End FAQs Section */}
 
       {/* Start Contact Section */}

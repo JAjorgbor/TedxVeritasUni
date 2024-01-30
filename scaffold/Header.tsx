@@ -27,14 +27,16 @@ const Header = () => {
     { label: 'About', route: '#About' },
     // { label: 'Sponsors', route: '#Sponsors' },
     // { label: 'Speakers', route: '#Speakers' },
-    { label: 'FAQs', route: '#FAQs' },
+    // { label: 'FAQs', route: '#FAQs' },
     { label: 'Contact', route: '#Contact' },
   ]
 
   return (
     <>
       <Navbar
-        className={`backdrop-blur-sm fixed top-0 px-3 md:px-0`}
+        className={`backdrop-blur-sm ${
+          isScrolled ? 'fixed' : ''
+        } lg:fixed top-0 px-3 md:px-0`}
         onScrollPositionChange={(position) => {
           if (position > 50) {
             setIsScrolled(true)
