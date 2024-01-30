@@ -38,7 +38,6 @@ const Hero: FC<HeroProps> = ({}) => {
           <div className='flex-1 flex justify-center'>
             <Image
               src='/images/hero-image.jpg'
-              className='w-[500px] h-[300px]'
               alt='hero image'
               width={500}
               height={300}
