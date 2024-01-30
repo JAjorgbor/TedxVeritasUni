@@ -23,6 +23,7 @@ const Header = () => {
   // console.log(hashValue)
   const { hashValue, setHashValue } = React.useContext(HashValueContext)
   const menuItems = [
+    { label: 'Theme', route: '#theme' },
     { label: 'About', route: '#About' },
     // { label: 'Sponsors', route: '#Sponsors' },
     // { label: 'Speakers', route: '#Speakers' },

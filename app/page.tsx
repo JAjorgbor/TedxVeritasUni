@@ -12,8 +12,10 @@ export default function Home() {
     <>
       {/* Start Hero Section */}
       <Hero />
-      {/* End Hero Section */}
-      <Section sectionName='About' className='py-5 space-y-10 '>
+      {/* Start Theme Section */}
+
+      {/* End Theme Section */}
+      <Section className='py-5 space-y-10' sectionName='theme'>
         <div className='space-y-5'>
           <div className='bg-black text-white py-5 rounded-xl space-y-5'>
             <h2 className='text-center text-2xl font-bold flex flex-col md:flex-row gap-2 items-center justify-center'>
@@ -65,12 +67,21 @@ export default function Home() {
           </div>
         </div>
         <div className='flex gap-6 flex-wrap justify-center'>
-          <Category title='Entrepeneuship' />
-          <Category title='Technology' />
-          <Category title='Education' />
-          <Category title='Entertainment' />
-          <Category title='Talent' />
+          <Category
+            title='Entrepreneuship'
+            imageSrc='/images/entrepreneuship.jpg'
+          />
+          <Category title='Technology' imageSrc='/images/technology.jpg' />
+          <Category title='Education' imageSrc='/images/education.jpg' />
+          <Category
+            title='Entertainment'
+            imageSrc='/images/entertainment.jpg'
+          />
+          <Category title='Talent' imageSrc='/images/talent.jpg' />
         </div>
+      </Section>
+      {/* End Hero Section */}
+      <Section sectionName='About' className='py-5 space-y-10'>
         <div className='flex flex-col lg:flex-row gap-6 items-center'>
           <div className='flex-1 space-y-5 order-2 lg:-order-1'>
             <h2 className='text-center font-bold text-xl'>About TED</h2>

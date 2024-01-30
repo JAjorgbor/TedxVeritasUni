@@ -12,9 +12,9 @@ const Contact = ({}) => {
         <div className='flex lg:w-4/5 mx-auto gap-8 md:gap-5 flex-col md:flex-row'>
           <div className='space-y-4 flex-1 text-foreground-500'>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-              modi quis ex perferendis blanditiis, sapiente, similique aperiam
-              corrupti asperiores illum optio
+              Connect with us! Whether you have questions, ideas, or simply want
+              to get involved, use this form. We&apos;re excited to hear from
+              you and explore the possibilities together. Your input matters!
             </p>
             <div className='flex items-center gap-4'>
               <MapPin size={20} className='text-primary' />
