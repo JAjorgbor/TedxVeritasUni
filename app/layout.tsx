@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   },
   description:
     'Embark on a transformative journey with us, where inspiration and innovation collide. Secure your spot now to witness groundbreaking insights, captivating creativity, and a unique experience that transcends the ordinary.',
+  other: {
+    'og:image': 'https://tedxveritas/images/hero-image.jpg',
+    'twitter:image': 'https://tedxveritas/images/hero-image.jpg',
+  },
 }
 
 export default function RootLayout({
