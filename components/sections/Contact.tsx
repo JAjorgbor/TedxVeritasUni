@@ -42,7 +42,7 @@ const Contact = ({}) => {
                 target='_blank'
                 className='text-inherit hover:text-primary'
               >
-                Multi Purpose Hall(MPH), <br /> Veritas University, Bwari,
+                Multi Purpose Hall(MPH). <br /> Veritas University, Bwari,
                 Abuja.{' '}
               </Link>
             </div>

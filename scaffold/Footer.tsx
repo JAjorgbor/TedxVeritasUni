@@ -17,13 +17,14 @@ const Footer = () => {
             />
           </div>
           <p className='mx-auto mt-6 max-w-md text-center leading-relaxed'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-            consequuntur amet culpa cum itaque neque.
+            Stay Connected with us! Explore our journey of ideas, innovation,
+            and inspiration. Follow us on social media for updates, insights,
+            and behind-the-scenes moments.
           </p>
           <ul className='mt-12 flex justify-center gap-5'>
             <li>
               <Link
-                href='/#'
+                href='/https://x.com/TEDxVuna'
                 rel='noreferrer'
                 target='_blank'
                 className='text-inherit hover:text-primary'
@@ -33,7 +34,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href='/#'
+                href='/https://instagram.com/TEDxVuna'
                 rel='noreferrer'
                 target='_blank'
                 className='text-inherit hover:text-primary'
