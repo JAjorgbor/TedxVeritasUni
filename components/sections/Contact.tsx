@@ -3,6 +3,8 @@ import React from 'react'
 import Section from '@/components/elements/Section'
 import { Button, Input, Link, Textarea } from '@nextui-org/react'
 import { Mail, Map, MapPin, Phone, Send } from 'react-feather'
+import axios from 'axios'
+import { toast } from 'react-toastify'
 import { useForm } from 'react-hook-form'
 
 const Contact = ({}) => {
@@ -14,13 +16,16 @@ const Contact = ({}) => {
   } = useForm()
   const submitData = async (data: any) => {
     try {
-      const res = await fetch('/api/contact/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/', body: JSON.stringify(data) },
-      })
-      console.log(res)
+      const res = await axios.post('/api/contact', data)
+      reset()
+      toast.success(
+        'Your message has been sent successfully, we will make sure to get back to you soon'
+      )
     } catch (error) {
       console.error(error)
+      toast.error(
+        'Something went wrong. Please check your connection and try again later.'
+      )
     }
   }
   return (
