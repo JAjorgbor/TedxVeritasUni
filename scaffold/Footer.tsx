@@ -24,7 +24,7 @@ const Footer = () => {
           <ul className='mt-12 flex justify-center gap-5'>
             <li>
               <Link
-                href='/https://x.com/TEDxVuna'
+                href='https://x.com/TEDxVuna'
                 rel='noreferrer'
                 target='_blank'
                 className='text-inherit hover:text-primary'
@@ -34,7 +34,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href='/https://instagram.com/TEDxVuna'
+                href='https://instagram.com/TEDxVuna'
                 rel='noreferrer'
                 target='_blank'
                 className='text-inherit hover:text-primary'
