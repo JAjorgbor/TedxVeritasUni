@@ -27,7 +27,7 @@ const Hero: FC<HeroProps> = ({}) => {
             </p>
             <div>
               <Button
-                className='bg-black transition-colors hover:bg-primary md:before:w-1/3 text-white'
+                className='bg-black transition-colors hover:bg-primary md:before:w-1/3 text-white hover:border hover:border-black'
                 size='lg'
                 variant='solid'
               >

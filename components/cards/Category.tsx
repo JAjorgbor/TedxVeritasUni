@@ -22,7 +22,7 @@ const Category = ({ title, imageSrc }: { title: string; imageSrc: string }) => {
           height={1000}
           // isZoomed
         />
-        <CardHeader className='absolute z-10 bottom-1 flex-col !items-start text-inherit'>
+        <CardHeader className='absolute z-10 bottom-1/2 left-5 p-[1.5] md:p-3 text-[0.8rem] flex-col !items-start text-inherit transform transition-all rotate-90 group-hover:left-0 group-hover:rotate-[initial] group-hover:bottom-10 origin-left'>
           <h4 className='font-bold text-large'>{title}</h4>
         </CardHeader>
       </Card>

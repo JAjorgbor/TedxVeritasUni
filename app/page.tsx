@@ -66,18 +66,38 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='flex gap-6 flex-wrap justify-center'>
-          <Category
-            title='Entrepreneuship'
-            imageSrc='/images/entrepreneuship.jpg'
-          />
-          <Category title='Technology' imageSrc='/images/technology.jpg' />
-          <Category title='Education' imageSrc='/images/education.jpg' />
-          <Category
-            title='Entertainment'
-            imageSrc='/images/entertainment.jpg'
-          />
-          <Category title='Talent' imageSrc='/images/talent.jpg' />
+        <div className='gap-4'>
+          <h3 className='text-2xl font-bold text-center '>
+            <span className='text-primary'>Ripples of Insight:</span>
+            Unveiling the Canvas
+          </h3>
+          <p className='text-center'>
+            Categories in the Spotlight at{' '}
+            <strong className='font-bold text-primary'>TEDxVeritasUni</strong>
+          </p>
+        </div>
+        <div className='grid grid-cols-2 sm:flex gap-3 sm:gap-6 flex-wrap justify-center'>
+          <div className='flex justify-center'>
+            <Category
+              title='Entrepreneuship'
+              imageSrc='/images/entrepreneuship.jpg'
+            />
+          </div>
+          <div className='flex justify-center'>
+            <Category title='Technology' imageSrc='/images/technology.jpg' />
+          </div>
+          <div className='flex justify-center'>
+            <Category title='Education' imageSrc='/images/education.jpg' />
+          </div>
+          <div className='flex justify-center'>
+            <Category
+              title='Entertainment'
+              imageSrc='/images/entertainment.jpg'
+            />
+          </div>
+          <div className='flex justify-center'>
+            <Category title='Talent' imageSrc='/images/talent.jpg' />
+          </div>
         </div>
       </Section>
       {/* End Hero Section */}
